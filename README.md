@@ -93,7 +93,6 @@ Other points:
 
 #### Frontend
 - Node.js >= 20
-- npm or yarn
 
 ### Installation
 
