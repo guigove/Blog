@@ -57,7 +57,7 @@ export const useTagStore = defineStore('tag', {
       this.loading = true
       try {
         const response = await axios.put(`/tags/${tag.id}`, tag)
-        const index = this.tags.findIndex(t => t.id === id)
+        const index = this.tags.findIndex(t => t.id === tag.id)
         if (index !== -1) {
           this.tags[index] = response.data
         }

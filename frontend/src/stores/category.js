@@ -57,7 +57,7 @@ export const useCategoryStore = defineStore('category', {
       this.loading = true
       try {
         const response = await axios.put(`/categories/${category.id}`, category)
-        const index = this.categories.findIndex(c => c.id === id)
+        const index = this.categories.findIndex(c => c.id === category.id)
         if (index !== -1) {
           this.categories[index] = response.data
         }
