@@ -86,7 +86,18 @@ Other points:
 
 ## Project Setup
 
-### Backend
+### Prerequisites
+
+#### Backend
+- Docker and Docker Compose
+
+#### Frontend
+- Node.js >= 20
+- npm or yarn
+
+### Installation
+
+#### Backend Setup
 1. Clone the repository:
    ```bash
    git clone https://github.com/guigove/Blog.git
@@ -102,7 +113,7 @@ Other points:
    docker-compose up -d --build 
    ```
 
-### Frontend
+#### Frontend Setup
 4. Install frontend dependencies:
    ```bash
    cd ../frontend
@@ -115,7 +126,7 @@ Other points:
    npm run build
    ```
 
-6. Access the application:
+#### Access the application:
    - Frontend: http://localhost:5173 (dev mode) or as configured
    - Backend API: http://localhost:8000
 
